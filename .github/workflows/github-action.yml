@@ -11,10 +11,11 @@ name: AWS CI/CD
 on:
   push:
     branches: [ "main" ]
-#env:
- # DOCKER_IMAGE: ghcr.io/${{ github.actor }}/chargingpot
- # VERSION: ${{ github.sha }}
- # NAME: aws-cd
+env:
+  PROJECT_NAME: test-aws-cicd
+  BUCKET_NAME: mwkim-github-actions-s3-bucket
+  CODE_DEPLOY_APP_NAME: mwk-codedeploy-app
+  DEPLOYMENT_GROUP_NAME: mwk-codedeploy-deployment-group
 
 jobs:
   build:
