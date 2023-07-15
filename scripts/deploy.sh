@@ -4,7 +4,7 @@ REPOSITORY=/home/ec2-user/test-aws-cicd
 cd $REPOSITORY
 
 APP_NAME=test-aws-cicd
-JAR_NAME=$(ls $REPOSITORY/target/ | grep 'SNAPSHOT.jar' | tail -n 1)
+JAR_NAME=$(ls $REPOSITORY/target/ | grep 'SNAPSHOT.jar$' | tail -n 1)
 JAR_PATH=$REPOSITORY/target/$JAR_NAME
 
 CURRENT_PID=$(pgrep -f $APP_NAME)
