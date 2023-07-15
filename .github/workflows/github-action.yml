@@ -12,10 +12,10 @@ on:
   push:
     branches: [ "main" ]
 env:
-  PROJECT_NAME: test-aws-cicd
-  BUCKET_NAME: mwkim-github-actions-s3-bucket
-  CODE_DEPLOY_APP_NAME: mwk-codedeploy-app
-  DEPLOYMENT_GROUP_NAME: mwk-codedeploy-deployment-group
+  PROJECT_NAME: test-aws-cicd #프로젝트명 
+  BUCKET_NAME: mwkim-github-actions-s3-bucket #AWS S3 버킷명
+  CODE_DEPLOY_APP_NAME: mwk-codedeploy-app #CODEDEPLOY APP명
+  DEPLOYMENT_GROUP_NAME: mwk-codedeploy-deployment-group #배포 그룹명
 
 jobs:
   build:
